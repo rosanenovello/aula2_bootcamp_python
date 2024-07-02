@@ -59,9 +59,26 @@
 #     print("Rodou tudo................................")
 
 
-numero = 1.1
-if isinstance(numero, int):
-    print("O numero é um inteiro")
+# try:
+#     # Código que pode gerar uma exceção
+#     resultado = 10 / 0
+# except ZeroDivisionError:
+#     # Código que executa se a exceção ZeroDivisionError for levantada
+#     print("Divisão por zero não é permitida.")
+
+
+# numero = 1.1
+# if isinstance(numero, int):
+#     print("O numero é um inteiro")
+# else:
+#     print(type(numero))
+#     print("O numero NAO é um inteiro")
+
+
+idade = 20
+if idade < 18:
+    print("Menor de idade")
+elif idade == 18:
+    print("Exatamente 18 anos")
 else:
-    print(type(numero))
-    print("O numero NAO é um inteiro")
+    print("Maior de idade")    
