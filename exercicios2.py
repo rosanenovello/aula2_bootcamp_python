@@ -38,14 +38,22 @@
 #4) Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
 #5) Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-exp1 = True
-exp2 = False
+try:
+    exp1 = True
+    exp2 = False
 
-n1=3
-n2=3
+    n1=3
+    n2=1 ## Forcei o erro
 
-print(f"O resultado do AND é {exp1 and exp2}")
-print(f"O resultado do OR é {exp1 or exp2}")
-print(f"FALSE invertido {not exp2}")
-print(f"Compara {n1} com {n2}  e o resultado é {n1 == n2}")
 
+    print(f"O resultado do AND é {exp1 and exp2}")
+    print(f"O resultado do OR é {exp1 or exp2}")
+    print(f"FALSE invertido {not exp2}")
+    print(f"Compara {n1} com {n2}  e o resultado é {n1 == n2}")
+    print(f"Divide {n1} por {n2}  e o resultado é {n1 / n2}")  
+except:
+    print("Deu erro................................")
+else:
+    print("Deu SUCESSO................................")
+finally:    
+    print("Rodou tudo................................")
