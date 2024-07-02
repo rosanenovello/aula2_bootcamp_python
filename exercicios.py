@@ -68,4 +68,5 @@ import math
 #raio = float(input("Digite o raio do círculo: "))
 raio = 5.0  # Exemplo de entrada
 area = math.pi* raio ** 2
-print("A área do círculo é:", area)
+
+print(f"A área do círculo é: {area:.2f}")
