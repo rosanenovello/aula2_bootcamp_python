@@ -1,5 +1,6 @@
 # Import statistics Library
 import statistics
+import math
 
 #Inteiros (int)
 ### 1 #Escreva um programa que soma dois números inteiros inseridos pelo usuário.
@@ -41,30 +42,30 @@ import statistics
 #print(f"A divisao dos dois numeros inteiros é {v1 + v2}")       
 
 ### 2 #Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-v1 = 5
-v2 = 5
-media = statistics.mean([v1,v2])
+#v1 = 5
+#v2 = 5
+#media = statistics.mean([v1,v2])
        
-print(f"A media de {v1} e {v2} é {media}")       
+#print(f"A media de {v1} e {v2} é {media}")       
 
 
 #Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
 # base = float(input("Digite a base: "))
 # expoente = float(input("Digite o expoente: "))
-base = 2.0  # Exemplo de entrada
-expoente = 3.0  # Exemplo de entrada
-potencia = base ** expoente
-print("O resultado da potência é:", potencia)
+#base = 2.0  # Exemplo de entrada
+#expoente = 3.0  # Exemplo de entrada
+#potencia = base ** expoente
+#print("O resultado da potência é:", potencia)
 
 #Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # celsius = float(input("Digite a temperatura em Celsius: "))
-celsius = 30.0  # Exemplo de entrada
-fahrenheit = (celsius * 9/5) + 32
-print(f"{celsius}°C é igual a {fahrenheit}°F")
+#celsius = 30.0  # Exemplo de entrada
+#fahrenheit = (celsius * 9/5) + 32
+#print(f"{celsius}°C é igual a {fahrenheit}°F")
 
 
 #Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 #raio = float(input("Digite o raio do círculo: "))
 raio = 5.0  # Exemplo de entrada
-area = 3.14159 * raio ** 2
+area = math.pi* raio ** 2
 print("A área do círculo é:", area)
