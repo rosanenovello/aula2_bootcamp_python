@@ -22,21 +22,21 @@
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
 # Utilize try-except para garantir que a entrada seja uma string. Dica: Utilize a função isinstance() para verificar o tipo da entrada.
 
-def inverter(txt):
-    return txt[::-1]
+# def inverter(txt):
+#     return txt[::-1]
 
 
-entrada = input("Digite uma palavra ou uma frase: ")
-if isinstance(entrada,str):
-    palavra = entrada.replace(" ","").upper()
-    palavra_invertida = inverter(palavra)
-    print(f"{palavra}  e inverso {palavra_invertida}")
-    if palavra == palavra_invertida:
-        print(f"A {palavra_invertida} é um palíndromo")
-    else:
-        print(f"A {palavra_invertida} NAO é um palíndromo")
-else:
-    print("Valor informado nao permitido")
+# entrada = input("Digite uma palavra ou uma frase: ")
+# if isinstance(entrada,str):
+#     palavra = entrada.replace(" ","").upper()
+#     palavra_invertida = inverter(palavra)
+#     print(f"{palavra}  e inverso {palavra_invertida}")
+#     if palavra == palavra_invertida:
+#         print(f"A {palavra_invertida} é um palíndromo")
+#     else:
+#         print(f"A {palavra_invertida} NAO é um palíndromo")
+# else:
+#     print("Valor informado nao permitido")
 
 
 
@@ -44,6 +44,28 @@ else:
 # Desenvolva uma calculadora simples que aceite duas entradas numéricas e um operador (+, -, *, /) do usuário. Use try-except para lidar com divisões 
 # por zero e entradas não numéricas. Utilize if-elif-else para realizar a operação matemática baseada no operador fornecido. Imprima o resultado ou uma
 #  mensagem de erro apropriada.
+
+try:
+    numero1 = int(input("Digite um numero inteiro: "))
+    numero2 = int(input("Digite um numero inteiro: "))
+    try:
+        oper = input("Digite a operacao desejada SOMA SUBTRACAO DIVISAO MULTIPLICACAO, utilize os operadores (+, -, *, /) para indica: ")
+        if oper == "+":
+           print(f"Resultado da soma de {numero1} pelo {numero2} é {numero1 + numero2}")
+        elif oper == "-":
+           print(f"Resultado da soma de {numero1} pelo {numero2} é {numero1 - numero2}")
+        elif oper == "*":
+           print(f"Resultado da soma de {numero1} pelo {numero2} é {numero1 * numero2}")
+        elif oper == "/" and numero2 != 0:
+           print(f"Resultado da soma de {numero1} pelo {numero2} é {numero1 / numero2}")
+        else:
+           print("Operacao Desconhecida ou Divisao por ZERO")   
+    except: 
+        print("Erro na Operacao")   
+
+except ValueError:
+    print("Somente numero serão aceitos")   
+
 
 # Exercício 24: Classificador de Números
 # Escreva um programa que solicite ao usuário para digitar um número. Utilize try-except para assegurar que a entrada seja numérica e utilize if-elif-else
